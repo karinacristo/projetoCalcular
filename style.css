@@ -12,6 +12,7 @@ body {
     width: 40%;
     margin: 50px auto;
     border: solid 2px white;
+    border-radius: 5px;
     padding: 1rem;
     height: 75vh;
     }
