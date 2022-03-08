@@ -1,3 +1,84 @@
 body {
     font-family: 'Roboto Mono', monospace;
+   
+    background-color: #000000;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: gray;
+    width: 40%;
+    margin: 50px auto;
+    border: solid 2px white;
+    padding: 1rem;
+    height: 75vh;
+    }
+  
+  
+  .page-title {
+    color:#ffffff;
+    margin: 0 0 5px;
+    font-size: 29px;
+  }
+  
+  .page-subtitle {
+    color:#ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 180px;
+  }
+
+  /* FORMULARIO */
+  form {
+    margin: 1rem;
+}
+
+/* DIV DOS INPUTS */
+.form-group {
+    margin: 0.700rem;
+}
+
+.cx, input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: white;
+}
+
+input[type=number] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: white;
+}
+
+input[type=submit] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: white;
+}
+
+.texto--padrao {
+    color: #ffffff;
+}
+
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+    .container {
+        width: 85%;
+        height: 85vh;
+    }
+    
+    .page-title {
+        font-size: 20px;
+      }
+
+    .page-subtitle {
+        font-size: 14px;
+    }
+    .page-logo {
+        width: 130px;
+      }
 }
