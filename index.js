@@ -6,14 +6,17 @@ document.getElementById("submit").onclick = function (e) {
   
     const notaFinal = ((primeiraNota + segundaNota + terceiraNota + quartaNota) / 4).toFixed(1);
     const nomeAluno = document.getElementById("entradaNome").value;
+    const mensagem = "Insira os valores das notas";
   
     let resultado;
+
   
     if (notaFinal >= 6){
-        resultado = "Aprovado";
-    } else {
-        resultado = "Reprovado"
+        resultado = "aprovado(a)"
+
+    } else if(notaFinal <= 5) {
+        resultado = "reprovado(a)"
     }
     
-    document.getElementById("resultado").innerHTML = `${nomeAluno} ficou com uma nota média de <em>${notaFinal}</em>`
+    document.getElementById("resultado").innerHTML = `${nomeAluno} ficou com uma nota média de <em>${notaFinal}</em> e foi ${resultado}`
   }
